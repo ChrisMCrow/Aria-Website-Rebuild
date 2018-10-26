@@ -40,3 +40,29 @@
 #nav-secondary--right {
   right: 6.25rem;
 }
+
+.nav-main li {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+  padding: 15px;
+  left: .25rem;
+}
+
+.nav-main * span {
+  font-size: 20px;
+  margin: 20px;
+  display: block;
+}
+
+.nav-main li:hover {
+  background-color: #2a5f75;
+  color: white;
+}
+
+.nav-highlight {
+  background-color: #668c9c;
+  color: white !important;
+}
