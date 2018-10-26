@@ -14,7 +14,6 @@
   height: 2.4375rem;
   position: absolute;
   top: 50px;
-  padding-left: 100px;
   text-transform: uppercase;
 }
 
@@ -35,5 +34,9 @@
 }
 
 #nav-secondary--left {
+  left: .25rem;
+}
 
+#nav-secondary--right {
+  right: 6.25rem;
 }
