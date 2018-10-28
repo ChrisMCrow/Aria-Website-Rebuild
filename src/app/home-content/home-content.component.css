@@ -1,0 +1,24 @@
+#home-image {
+  position: relative;
+  filter: brightness(60%);
+}
+
+#home-image-text {
+  position: absolute;
+  top: 350px;
+  color: white;
+  margin-left: 100px;
+  filter: none;
+}
+
+#home-image-text h1 {
+  font-family: helvetica;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+#home-image-text h6 {
+  font-family: helvetica;
+  font-size: 30px;
+  font-weight: 400;
+}
