@@ -12,6 +12,7 @@
   color: white;
   margin-left: 100px;
   filter: none;
+  text-shadow: 2px 2px 5px black;
 }
 
 #home-image-text h1 {
@@ -56,6 +57,11 @@
   padding: 10px;
   color: white;
   text-transform: uppercase;
+}
+
+#book-form button:hover {
+  color: #2a5f75;
+  background-color: #fff;
 }
 
 #book-widget-guarantee {

@@ -10,3 +10,13 @@ nav li {
 a {
   color: #2a5f75;
 }
+
+.btn-info {
+  background-color: #2a5f75;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: white;
+  color: #2a5f75;
+}
