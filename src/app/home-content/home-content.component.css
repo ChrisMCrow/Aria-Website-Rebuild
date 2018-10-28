@@ -36,11 +36,28 @@
 }
 
 #book-widget {
-  border: 1px solid black;
+  border: 1px solid lightgray;
   padding: 24px 32px;
 }
 
 #book-form {
   font-family: 'Source Sans Pro', sans-serif;
+}
 
+#book-form-link {
+  padding-top: 10px;
+  text-align: right;
+}
+
+#book-form button {
+  background-color: #2a5f75;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+#book-widget-guarantee {
+  text-align: center;
 }
