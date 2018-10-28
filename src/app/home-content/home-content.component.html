@@ -10,31 +10,31 @@
   <div id="book-widget">
     <h3 class="title">Book a Room</h3>
     <hr />
-    <form action="" id="book-form">
+    <div id="book-form">
       <div class="row">
         <div class="col-xs-6">
           <label for="checkin">Check-In</label>
-          <input type="date" name="checkin">
+          <input #checkInDate type="date" name="checkin">
         </div>
         <div class="col-xs-6">
           <label for="checkout">Check-Out</label>
-          <input type="date" name="checkout"><br><br>
+          <input #checkOutDate type="date" name="checkout"><br><br>
         </div>
       </div>
       <div>
         <label for="guests">Guests</label><br>
-        <select name="guests" class="form-control">
-          <option value="1">1 Guest</option>
-          <option value="2">2 Guests</option>
-          <option value="3">3 Guests</option>
-          <option value="4">4 Guests</option>
+        <select #guestsNumber name="guests" class="form-control">
+          <option [value]="1">1 Guest</option>
+          <option [value]="2">2 Guests</option>
+          <option [value]="3">3 Guests</option>
+          <option [value]="4">4 Guests</option>
         </select>
       </div>
       <div id="book-form-link">
         <a href=#>Special Rates</a><br>
       </div>
-      <button type="submit"><strong>Find Rooms</strong></button>
-    </form>
+      <button (click)="submitForm(checkInDate.val, checkOutDate.val, guestsNumber.val)"><strong>Find Rooms</strong></button>
+    </div>
     <div id="book-widget-guarantee">
       <a href=#><img src="../assets/img/best-rates-guarantee-grey.png" alt="Best Rate Guarantee"></a>
     </div>
