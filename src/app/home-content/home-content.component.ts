@@ -10,7 +10,6 @@ export class HomeContentComponent implements OnInit {
   constructor() { }
 
   submitForm(checkIn: string, checkOut: string, guests: string) {
-    alert(`${checkIn}`);
     window.location.replace(`https://www.aria.com/en/booking/room-booking.html#/rooms?numGuests=${guests}&arrive=${checkIn}&depart=${checkOut}`);
   }
 
