@@ -66,6 +66,7 @@
   width: 100%;
   margin: 20px 0px;
   padding: 10px;
+  border: 1px solid #2a5f75;
   color: white;
   text-transform: uppercase;
 }
@@ -84,6 +85,8 @@
   width: 148px;
   margin: 20px 0px;
   padding: 10px;
+  border: 1px solid #2a5f75;
+  color: #2a5f75;
   font-weight: bold;
   text-transform: uppercase;
   background-color: #fefefe;
