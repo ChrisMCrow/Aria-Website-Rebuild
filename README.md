@@ -1,27 +1,51 @@
-# WebsiteRebuild
+# Aria Resort & Casino Angular Website Rebuild
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+##### Rebuilding the Aria Resort & Casino in Las Vegas Website using Angular. 10/28/18
 
-## Development server
+#### By **Chris Crow**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+The goal here is to mimic the design and functionality of the Aria's website: www.aria.com.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Specifications
+* The home page should look professional and match the style of the Aria website.
+* The user should be able to query the website for booking a room.
+* The website should be able to be populated with different features / advertisements about the hotel.
 
-## Build
+### Features Added
+* Nav bar
+* Book a Room Form with Special Rates feature
+* Footer with map, social media links & more.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Time Logged
+| Date | Time Started | Time Finished | Hours |
+| :------- | :--- | :------ | :--- |
+| 10-26-18 | 8am  | 10:30am | 2.5  |
+| 10-28-18 | 10am | 1:30pm  | 3.5  |
+| 10-28-18 | 7pm  | 10:30pm | 3.5  |
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup/Installation Requirements
 
-## Running end-to-end tests
+1. Clone this repository.
+2. Run `npm install` in the terminal while in the repository's top directory.
+3. After install has completed, run `ng serve --open` in the terminal.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Known Bugs
+* No known bugs at this time.
 
-## Further help
+## Technologies Used
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* Angular
+* TypeScript
+* NodeJS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Support and Contact Details
+
+_Email chrismcrow@gmail.com._
+
+&copy; 2018 **_Chris Crow_**
