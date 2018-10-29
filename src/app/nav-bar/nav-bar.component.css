@@ -41,6 +41,10 @@
   right: 6.25rem;
 }
 
+.nav-main {
+  margin: 0;
+}
+
 .nav-main li {
   text-transform: uppercase;
   text-align: center;
