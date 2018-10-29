@@ -36,18 +36,29 @@
   padding: 16px;
 }
 
-#book-widget {
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #2a5f75;
+  font-weight: bold;
+}
+
+#book-widget, #special-rates {
   border: 1px solid lightgray;
   padding: 24px 32px;
 }
 
-#book-form {
+#book-form, #apply-rates {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 #book-form-link {
   padding-top: 10px;
   text-align: right;
+}
+
+#book-form-link:hover {
+  cursor: pointer;
 }
 
 #book-form button {
@@ -61,9 +72,34 @@
 
 #book-form button:hover {
   color: #2a5f75;
-  background-color: #fff;
+  background: #fefefe;
 }
+
 
 #book-widget-guarantee {
   text-align: center;
+}
+
+#apply-rates button {
+  width: 148px;
+  margin: 20px 0px;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #fefefe;
+}
+
+#apply-rates button:first-of-type {
+  background-color: #2a5f75;
+  color: white;
+}
+
+#apply-rates button:hover:first-of-type {
+  color: #2a5f75;
+  background: #fefefe;
+}
+
+#apply-rates button:hover:last-of-type{
+  background-color: #2a5f75;
+  color: white;
 }

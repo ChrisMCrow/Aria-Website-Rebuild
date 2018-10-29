@@ -7,21 +7,21 @@
   <h6>this is how we vegas</h6>
 </div>
 <div class="book-widget-wrapper">
-  <div id="book-widget">
+  <div *ngIf="!specialRatesClicked" id="book-widget">
     <h3 class="title">Book a Room</h3>
     <hr />
     <div id="book-form">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-6 form-group">
           <label for="checkin">Check-In</label>
-          <input #checkInDate type="date" name="checkin">
+          <input #checkInDate class="form-control" type="date" name="checkin">
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 form-group">
           <label for="checkout">Check-Out</label>
-          <input #checkOutDate type="date" name="checkout"><br><br>
+          <input #checkOutDate class="form-control" type="date" name="checkout">
         </div>
       </div>
-      <div>
+      <div class="form-group">
         <label for="guests">Guests</label><br>
         <select #guestsNumber name="guests" class="form-control">
           <option [value]="1">1 Guest</option>
@@ -31,12 +31,37 @@
         </select>
       </div>
       <div id="book-form-link">
-        <a href=#>Special Rates</a><br>
+        <a (click)="specialRates()">Special Rates</a><br>
       </div>
       <button (click)="submitForm(checkInDate.val, checkOutDate.val, guestsNumber.val)"><strong>Find Rooms</strong></button>
     </div>
     <div id="book-widget-guarantee">
       <a href=#><img src="../assets/img/best-rates-guarantee-grey.png" alt="Best Rate Guarantee"></a>
+    </div>
+  </div>
+  <div *ngIf="specialRatesClicked" id="special-rates">
+    <h3 class="title">Special Rates</h3>
+    <hr />
+    <div id="apply-rates">
+      <label for="ratesType">Special Rates</label><br>
+      <div class="row">
+        <div class="col-xs-6">
+          <input #militaryRate type="radio" name="ratesType" [value]="MilitaryRate">&nbsp; Military Rate
+        </div>
+        <div class="col-xs-6">
+          <input #AAARate type="radio" name="ratesType" [value]="AAARate">&nbsp; AAA Discount<br><br>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="promoCode">Promo Code</label>
+        <input #promoCode class="form-control" name="promoCode" placeholder="Enter Promo Code" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="iata">IATA</label>
+        <input #iata class="form-control" name="iata" placeholder="Enter IATA Code" type="text">
+      </div>
+      <button (click)="applyRate(militaryRate.val, AAARate.val, promoCode.val, iata.val)">Save</button>
+      <button (click)="specialRates()">Cancel</button>
     </div>
   </div>
 </div>

@@ -6,11 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-content.component.css']
 })
 export class HomeContentComponent implements OnInit {
+  title: "HomeContent";
 
-  constructor() { }
-
-  submitForm(checkIn: string, checkOut: string, guests: string) {
+  submitForm(checkIn: string, checkOut: string, guests: string): void {
     window.location.replace(`https://www.aria.com/en/booking/room-booking.html#/rooms?numGuests=${guests}&arrive=${checkIn}&depart=${checkOut}`);
+  }
+
+  specialRatesClicked: boolean = false;
+  specialRates(): void {
+    this.specialRatesClicked === true ?
+    this.specialRatesClicked = false :
+    this.specialRatesClicked = true;
   }
 
   ngOnInit() {
