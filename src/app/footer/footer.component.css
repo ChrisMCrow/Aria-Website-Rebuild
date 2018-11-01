@@ -28,7 +28,6 @@
   margin-bottom: 15px;
 }
 
-
 .footer hr {
   border: 0;
   border-bottom: 1px dotted gray;
@@ -53,13 +52,14 @@
   margin: 10px;
 }
 
-.map-image {
-  padding: 0;
+aside > .row {
+  position: relative;
+  right: 15px;
 }
 
 .links {
   background-color: #222;
-  padding: 15px 0 120px 0;
+  padding: 15px 0 65px 0;
 }
 
 #best-rates {
