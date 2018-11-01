@@ -20,3 +20,11 @@ a {
   background-color: white;
   color: #2a5f75;
 }
+
+@media screen and (min-width: 1200px) {
+  body, footer {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

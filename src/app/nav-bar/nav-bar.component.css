@@ -1,3 +1,7 @@
+nav {
+  position: relative;
+}
+
 #nav-logo {
   width: 100%;
   padding-bottom: 18px;
@@ -52,7 +56,7 @@
   color: #666;
   font-size: 14px;
   padding: 15px;
-  left: .25rem;
+  /* left: .25rem; */
 }
 
 .nav-main * span {
@@ -69,4 +73,22 @@
 .nav-highlight {
   background-color: #668c9c;
   color: white !important;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav-main li {
+    width: 9vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-main li {
+    font-size: 0;
+    width: 8vw;
+  }
+
+  .nav-secondary li {
+    padding: 5px;
+    border-left: 1px dotted lightgray;
+  }
 }

@@ -1,67 +1,69 @@
-<div id="home-image">
-  <img src="../assets/img/aria_fullpage.jpg" alt="the Aria Hotel & Resort" width=1366px height=598px>
-</div>
-<div id="home-image-text">
-  <h1>Expect nothing but</h1>
-  <h1>world-class</h1><br>
-  <h6>this is how we vegas</h6>
-</div>
-<div class="book-widget-wrapper">
-  <div *ngIf="!specialRatesClicked" id="book-widget">
-    <h3 class="title">Book a Room</h3>
-    <hr />
-    <div id="book-form">
-      <div class="row">
-        <div class="col-xs-6 form-group">
-          <label for="checkin">Check-In</label>
-          <input #checkInDate class="form-control" type="date" name="checkin">
+<div class="wrapper">
+  <figure id="home-image">
+    <img id="aria-image" src="../assets/img/aria_fullpage.jpg" alt="the Aria Hotel & Resort">
+    <!-- width=1280px height=598px -->
+  </figure>
+  <main id="home-image-text">
+    <h1>Expect nothing but world-class</h1>
+    <h6>this is how we vegas</h6>
+  </main>
+  <aside class="book-widget-wrapper">
+    <div *ngIf="!specialRatesClicked" id="book-widget">
+      <h3 class="title">Book a Room</h3>
+      <hr />
+      <div id="book-form">
+        <div class="row">
+          <div class="col-xs-6 form-group">
+            <label for="checkin">Check-In</label>
+            <input #checkInDate class="form-control" type="date" name="checkin">
+          </div>
+          <div class="col-xs-6 form-group">
+            <label for="checkout">Check-Out</label>
+            <input #checkOutDate class="form-control" type="date" name="checkout">
+          </div>
         </div>
-        <div class="col-xs-6 form-group">
-          <label for="checkout">Check-Out</label>
-          <input #checkOutDate class="form-control" type="date" name="checkout">
+        <div class="form-group">
+          <label for="guests">Guests</label><br>
+          <select #guestsNumber name="guests" class="form-control">
+            <option [value]="1">1 Guest</option>
+            <option [value]="2">2 Guests</option>
+            <option [value]="3">3 Guests</option>
+            <option [value]="4">4 Guests</option>
+          </select>
         </div>
+        <div id="book-form-link">
+          <a (click)="specialRates()">Special Rates</a><br>
+        </div>
+        <button (click)="submitForm(checkInDate.val, checkOutDate.val, guestsNumber.val)"><strong>Find Rooms</strong></button>
       </div>
-      <div class="form-group">
-        <label for="guests">Guests</label><br>
-        <select #guestsNumber name="guests" class="form-control">
-          <option [value]="1">1 Guest</option>
-          <option [value]="2">2 Guests</option>
-          <option [value]="3">3 Guests</option>
-          <option [value]="4">4 Guests</option>
-        </select>
+      <div id="book-widget-guarantee">
+        <a href=#><img src="../assets/img/best-rates-guarantee-grey.png" alt="Best Rate Guarantee"></a>
       </div>
-      <div id="book-form-link">
-        <a (click)="specialRates()">Special Rates</a><br>
-      </div>
-      <button (click)="submitForm(checkInDate.val, checkOutDate.val, guestsNumber.val)"><strong>Find Rooms</strong></button>
     </div>
-    <div id="book-widget-guarantee">
-      <a href=#><img src="../assets/img/best-rates-guarantee-grey.png" alt="Best Rate Guarantee"></a>
-    </div>
-  </div>
-  <div *ngIf="specialRatesClicked" id="special-rates">
-    <h3 class="title">Special Rates</h3>
-    <hr />
-    <div id="apply-rates">
-      <label for="ratesType">Special Rates</label><br>
-      <div class="row">
-        <div class="col-xs-6">
-          <input #militaryRate type="radio" name="ratesType" [value]="MilitaryRate">&nbsp; Military Rate
+    <div *ngIf="specialRatesClicked" id="special-rates">
+      <h3 class="title">Special Rates</h3>
+      <hr />
+      <div id="apply-rates">
+        <label for="ratesType">Special Rates</label><br>
+        <div class="row">
+          <div class="col-xs-6">
+            <input #militaryRate type="radio" name="ratesType" [value]="MilitaryRate">&nbsp; Military Rate
+          </div>
+          <div class="col-xs-6">
+            <input #AAARate type="radio" name="ratesType" [value]="AAARate">&nbsp; AAA Discount<br><br>
+          </div>
         </div>
-        <div class="col-xs-6">
-          <input #AAARate type="radio" name="ratesType" [value]="AAARate">&nbsp; AAA Discount<br><br>
+        <div class="form-group">
+          <label for="promoCode">Promo Code</label>
+          <input #promoCode class="form-control" name="promoCode" placeholder="Enter Promo Code" type="text" />
         </div>
+        <div class="form-group">
+          <label for="iata">IATA</label>
+          <input #iata class="form-control" name="iata" placeholder="Enter IATA Code" type="text">
+        </div>
+        <button (click)="applyRate(militaryRate.val, AAARate.val, promoCode.val, iata.val)">Save</button>
+        <button (click)="specialRates()">Cancel</button>
       </div>
-      <div class="form-group">
-        <label for="promoCode">Promo Code</label>
-        <input #promoCode class="form-control" name="promoCode" placeholder="Enter Promo Code" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="iata">IATA</label>
-        <input #iata class="form-control" name="iata" placeholder="Enter IATA Code" type="text">
-      </div>
-      <button (click)="applyRate(militaryRate.val, AAARate.val, promoCode.val, iata.val)">Save</button>
-      <button (click)="specialRates()">Cancel</button>
     </div>
-  </div>
+  </aside>
 </div>

@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
+.wrapper {
+  position: relative;
+}
 
 #home-image {
-  position: relative;
+  background-position: center;
   filter: brightness(60%);
+}
+
+#aria-image {
+  width: 100%;
 }
 
 #home-image-text {
   position: absolute;
-  top: 350px;
+  top: 80px;
+  width: 50%;
   color: white;
   margin-left: 100px;
   filter: none;
@@ -29,9 +37,9 @@
 
 .book-widget-wrapper {
   position: absolute;
-  top: 300px;
+  top: 50px;
   left: 60%;
-  margin-right: 116px;
+  margin-right: 4%;
   background-color: white;
   padding: 16px;
 }
@@ -76,7 +84,6 @@
   background: #fefefe;
 }
 
-
 #book-widget-guarantee {
   text-align: center;
 }
@@ -105,4 +112,27 @@
 #apply-rates button:hover:last-of-type{
   background-color: #2a5f75;
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+  #home-image-text {
+    width: 100% !important;
+    font-size: 0;
+    width: 8vw;
+    margin-left: auto;
+    text-align: center !important;
+  }
+
+  #home-image-text * {
+    font-size: 40px !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .book-widget-wrapper {
+    position: relative;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
