@@ -1,12 +1,14 @@
 <div class="wrapper">
   <figure id="home-image">
     <img id="aria-image" src="../assets/img/aria_fullpage.jpg" alt="the Aria Hotel & Resort">
-    <!-- width=1280px height=598px -->
   </figure>
   <main id="home-image-text">
     <h1>Expect nothing but world-class</h1>
     <h6>this is how we vegas</h6>
   </main>
+
+
+  <!--Book Widget-->
   <aside class="book-widget-wrapper">
     <div *ngIf="!specialRatesClicked" id="book-widget">
       <h3 class="title">Book a Room</h3>
@@ -25,32 +27,39 @@
         <div class="form-group">
           <label for="guests">Guests</label><br>
           <select #guestsNumber name="guests" class="form-control">
-            <option [value]="1">1 Guest</option>
-            <option [value]="2">2 Guests</option>
-            <option [value]="3">3 Guests</option>
-            <option [value]="4">4 Guests</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
           </select>
         </div>
-        <div id="book-form-link">
-          <a (click)="specialRates()">Special Rates</a><br>
+        <div *ngIf="!this.discount" class="text-right">
+          <a (click)="specialRates()" class="book-form-link">Special Rates</a><br>
         </div>
-        <button (click)="submitForm(checkInDate.val, checkOutDate.val, guestsNumber.val)"><strong>Find Rooms</strong></button>
+        <div *ngIf="this.discount">
+            <span>Special Rates Applied: {{this.discount}}
+            <a (click)="removeRate()" class="book-form-link" style="float: right">Remove</a></span>
+        </div>
+        <button (click)="submitForm(checkInDate.value, checkOutDate.value, guestsNumber.value)"><strong>Find Rooms</strong></button>
       </div>
       <div id="book-widget-guarantee">
         <a href=#><img src="../assets/img/best-rates-guarantee-grey.png" alt="Best Rate Guarantee"></a>
       </div>
     </div>
+
+
+    <!--Special Rates Widget-->
     <div *ngIf="specialRatesClicked" id="special-rates">
       <h3 class="title">Special Rates</h3>
       <hr />
       <div id="apply-rates">
         <label for="ratesType">Special Rates</label><br>
         <div class="row">
-          <div class="col-xs-6">
-            <input #militaryRate type="radio" name="ratesType" [value]="MilitaryRate">&nbsp; Military Rate
+          <div  class="col-xs-6">
+            <input #MilitaryRate [value]="MilitaryRate" type="radio" name="ratesType">&nbsp; Military Rate
           </div>
           <div class="col-xs-6">
-            <input #AAARate type="radio" name="ratesType" [value]="AAARate">&nbsp; AAA Discount<br><br>
+            <input #AAARate [value]="AAARate" type="radio" name="ratesType">&nbsp; AAA Discount<br><br>
           </div>
         </div>
         <div class="form-group">
@@ -61,7 +70,8 @@
           <label for="iata">IATA</label>
           <input #iata class="form-control" name="iata" placeholder="Enter IATA Code" type="text">
         </div>
-        <button (click)="applyRate(militaryRate.val, AAARate.val, promoCode.val, iata.val)">Save</button>
+        <p *ngIf="!this.valid" class="text-danger">Invalid Code</p>
+        <button (click)="applyRate(MilitaryRate.value, AAARate.value, promoCode.value, iata.value); promoCode.value=''; iata.value=''">Save</button>
         <button (click)="specialRates()">Cancel</button>
       </div>
     </div>

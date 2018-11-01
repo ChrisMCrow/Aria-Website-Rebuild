@@ -6,7 +6,7 @@
 
 #home-image {
   background-position: center;
-  filter: brightness(60%);
+  filter: brightness(80%);
 }
 
 #aria-image {
@@ -37,7 +37,7 @@
 
 .book-widget-wrapper {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 60%;
   margin-right: 4%;
   background-color: white;
@@ -60,12 +60,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#book-form-link {
-  padding-top: 10px;
-  text-align: right;
-}
-
-#book-form-link:hover {
+.book-form-link:hover {
   cursor: pointer;
 }
 
