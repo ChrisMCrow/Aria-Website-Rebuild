@@ -146,6 +146,10 @@ button:hover {
     width: 8vw;
   }
 
+  #mini-nav {
+    display: none;
+  }
+
   .nav-secondary li {
     padding: 5px;
     border-left: 1px dotted lightgray;
