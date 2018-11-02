@@ -5,6 +5,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { FeaturesComponent } from './features/features.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     NavBarComponent,
     HomeContentComponent,
-    FooterComponent
+    FooterComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,

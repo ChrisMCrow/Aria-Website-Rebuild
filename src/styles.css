@@ -23,7 +23,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   body, footer {
-    max-width: 1280px;
+    max-width: 1370px;
     margin-left: auto;
     margin-right: auto;
   }
