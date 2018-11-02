@@ -6,7 +6,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class FeatureService {
   features: FirebaseListObservable<any[]>;
 
-  constructor(public database: AngularFireDatabase) {
+  constructor(private database: AngularFireDatabase) {
     this.features = database.list('features');  
     console.log(this.features);
   }

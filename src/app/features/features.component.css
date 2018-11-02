@@ -1,0 +1,91 @@
+.feature-list{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature {
+  position: relative;
+  float: left;
+  height: 414px;
+  background-color: white;
+  margin: 20px 1%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px gray;
+  text-align: center;
+}
+
+.feature-6 {
+  width: 23%;
+}
+
+.feature-9 {
+  width: 35.5%;
+}
+
+.feature-12 {
+  width: 48%;
+}
+
+.feature figure {
+  contain: content;
+  max-height: 214px;
+  width: 100%;
+  z-index: 0;
+}
+
+.feature h3 {
+  color: #2a5f75;
+  margin-top: 5px;
+}
+
+.title a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: #222;
+}
+
+.title a:hover {
+  color: #2a5f75;
+}
+
+.description {
+  color: #8f8f8f;
+  font-size: 12px;
+  padding: 0 30px;
+}
+
+.button-feature {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: #2a5f75;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #2a5f75;
+  border-radius: 3px;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-feature button:hover {
+  color: #2a5f75;
+  background: #fefefe;
+}
+
+@media screen and (max-width: 1200px) {
+  .feature {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature-6, .feature-9, .feature-12 {
+    width: 98%;
+  }
+}

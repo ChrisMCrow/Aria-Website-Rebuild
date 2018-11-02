@@ -1,9 +1,13 @@
-<h2>Features</h2>
-<div *ngFor="let feature of features | async">
-  <div class="card">
+<section class="feature-list">
+  <div *ngFor="let feature of features | async" class="feature feature-{{feature.width}}">
     <figure>
-      <img src="{{feature.image}}" alt="{{feature.title}}">
+      <img src={{feature.image}} alt="image">
     </figure>
-    <p>{{feature.title}}</p>
+    <h3 class="glyphicon glyphicon-{{feature.icon}}" aria-hidden="true"></h3> 
+    <h4 class="title"><a href={{feature.link}}>{{feature.title}}</a></h4>
+    <p class="description">{{feature.description}}</p>
+    <a href={{feature.link}}>
+      <button class="button-feature" type="button">{{feature.buttonText}}</button>
+    </a>
   </div>
-</div>
+</section>
