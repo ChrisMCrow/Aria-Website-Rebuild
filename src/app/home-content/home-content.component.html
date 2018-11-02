@@ -37,8 +37,8 @@
           <a (click)="specialRates()" class="book-form-link">Special Rates</a><br>
         </div>
         <div *ngIf="this.discount">
-            <span>Special Rates Applied: {{this.discount}}
-            <a (click)="removeRate()" class="book-form-link" style="float: right">Remove</a></span>
+          <span>Special Rates Applied: {{this.discount}}
+          <a (click)="removeRate()" class="book-form-link" style="float: right">Remove</a></span>
         </div>
         <button (click)="submitForm(checkInDate.value, checkOutDate.value, guestsNumber.value)"><strong>Find Rooms</strong></button>
       </div>

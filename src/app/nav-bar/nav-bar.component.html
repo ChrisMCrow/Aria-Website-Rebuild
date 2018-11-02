@@ -1,22 +1,62 @@
 <nav>
+  <!--Logo-->
   <div id="nav-logo">
     <a href=#><img id="logo-element" src="../assets/img/aria_logo.jpg" alt="aria logo" /></a>
   </div>
+
+  <!--Left Secondary Nav-->
   <ul class="nav-secondary" id="nav-secondary--left">
     <a href=#><li>Sign In</li></a>
     <a href="https://www.aria.com/en/hotel/aria-sky-suites-home.html" target="_blank"><li>Aria Sky Suites</li></a>
     <a href=#><li>Aria Tower Suites</li></a>
   </ul>
+
+  <!--Right Secondary Nav-->
   <ul class="nav-secondary" id="nav-secondary--right">
     <a href=#><li>Guest Services</li></a>
     <a href=#><li>Itinerary</li></a>
     <a href=#><li><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li></a>
   </ul>
+
+  <!--Main Nav-->
   <ul class="nav-main">
-    <a href=#><li class="nav-highlight"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Book a Room</li></a>
+    <!--Book Room Dropdown-->
+    <div class="dropdown">
+      <li class="nav-highlight dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+        Book a Room
+      </li>
+      <div class="form-group dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-item">
+          <label for="checkin">Arrival</label>
+          <input #checkInDate class="form-control" type="date" name="checkin" />
+        </div>
+        <div class="form-group dropdown-item">
+          <label for="checkin">Departure</label>
+          <input #checkOutDate class="form-control" type="date" name="checkin">
+        </div>
+        <div class="form-group dropdown-item">
+          <label for="guests">Guests</label>
+          <select #guestsNumber class="form-control form-control-lg" name="guests">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button (click)="submitForm(checkInDate.value, checkOutDate.value, guestsNumber.value)"><strong>Find Rooms</strong></button>
+        </div>
+        <div class="text-center" id="book-widget-guarantee">
+          <a href=#><img src="../assets/img/best-rates-guarantee-grey.png" alt="Best Rate Guarantee"></a>
+        </div>    
+      </div>
+    </div>
+      
+    <!--External Links-->
     <a href="https://www2.aria.com/en/hotel.html"><li><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Hotel</li></a>
     <a href="https://www2.aria.com/en/entertainment.html"><li><span class="glyphicon glyphicon-music" aria-hidden="true"></span>Entertainment</li></a>
-    <a href="https://www2.aria.com/en/restaurants.html"></a><li><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>Restaurants</li></a>
+    <a href="https://www2.aria.com/en/restaurants.html"><li><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>Restaurants</li></a>
     <a href="https://www2.aria.com/en/nightlife.html"><li><span class="glyphicon glyphicon-glass" aria-hidden="true"></span>Nightlife</li></a>
     <a href="https://www2.aria.com/en/amenities.html"><li><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>Amenities</li></a>
     <a href="https://www2.aria.com/en/casino.html"><li><span class="glyphicon glyphicon-star" aria-hidden="true"></span>Casino</li></a>
