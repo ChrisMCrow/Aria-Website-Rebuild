@@ -1,0 +1,106 @@
+{ "features": [{
+    "width": 4.5,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/sky-suites/sky-villa/lifestyle/aria-hotel-sky-suites-villa-lifestyle-woman-window.tif.image.550.325.high.jpg",
+    "icon": "bed",
+    "title": "Aria Room Experiences",
+    "description": "View the various experiences, amenities and access for Resort Tower, Tower Suites and Sky Suites.",
+    "button-text": "View Experiences",
+    "link": "https://www2.aria.com/en/hotel/aria-experiences.html"
+  }, {
+    "width": 4.5,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/aria/exterior/aria-hotel-exterior-from-ground.tif.image.550.325.high.jpg",
+    "icon": "bed",
+    "title": "Compare Aria Rooms",
+    "description": "Whether you choose our Deluxe Rooms, Tower Suites or Sky Suites your stay at ARIA will include a world of unexpected amenities.",
+    "button-text": "Compare Experiences",
+    "link": "https://www2.aria.com/en/hotel/room-comparison.html"
+  }, {
+    "width": 3,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/hotel/resort-club-lounge/resort-club-lounge-rooms/resort-club-lounge-queen/aria-hotel-deluxe-resort-club-lounge-queen-room.jpg.image.300.300.high.jpg",
+    "icon": "usd",
+    "title": "Fall Savings Package",
+    "description": "Book by November 15 to enjoy these special rates plus bonus discounts.",
+    "button-text": "Book Offer",
+    "link": "https://www2.aria.com/en/booking/room-booking.html#/default?programId=580b66b8-f4db-4777-b93a-43bc9c32feb9&selectedPropertyId=e2704b04-d515-45b0-8afd-4fa1424ff0a8"
+  }, {
+    "width": 3,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/corporate/corporate-initiatives/m-life/M%20life%20-%20gaming%20lifestyle.tif.image.300.300.high.jpg",
+    "icon": "star",
+    "title": "M Life Rewards",
+    "description": "Members get up to an extra 30% off our lowest rates. Best room rates guaranteed.",
+    "button-text": "Join or Sign In",
+    "link": "https://www2.aria.com/en/sign-in.html?icid=DMP_Tile_AW_ML_MlifeRewards_LV_AR"
+  }, {
+    "width": 6,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/dining/jean-georges-steakhouse/architecture/aria-dining-jean-georges-main-dining.jpg.image.650.300.high.jpg",
+    "icon": "cutlery",
+    "title": "Jean Georges Steakhouse",
+    "description": "If you are craving Kobe A5, arguably the best beef in the world, we have it. But, the offerings extend far beyond a simple steak.",
+    "button-text": "Book Table",
+    "link": "https://www2.aria.com/en/restaurants/jean-georges-steakhouse.html?kbid=2584521&s_kwcid=AL!4737!3!151739541275!e!!g!!jean%20georges%20steakhouse&ef_id=CjwKCAjw6-_eBRBXEiwA-5zHaRa9VCCocQEo5YRQCLVKXTqJ-e3IKFwCbfgYNwHJhSaIOh6nJ7X1YBoC3g0QAvD_BwE:G:s&s_kwcid=AL!4737!3!151739541275!e!!g!!jean%20georges%20steakhouse"
+  }, {
+    "width": 3,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/corporate/corporate-initiatives/m-life/mlife-rewards-mastercard-credit-card-dark-background.jpg.image.300.300.high.jpg",
+    "icon": "usd",
+    "title": "M Life Rewards Mastercard",
+    "description": "Earn M Life Rewards Faster",
+    "button-text": "Learn More",
+    "link": "https://www.mgmresorts.com/en/mlife-rewards-program/mlife-rewards-mastercard-r3.html"
+  }, {
+    "width": 4.5,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/dining/carbone/lifestyle/aria-dining-carbone-dinner-lifestyle-talking.jpg.image.550.325.high.jpg",
+    "icon": "cutlery",
+    "title": "Carbone",
+    "description": "This celebrated concept from Mario Carbone, Rich Torrisi and Jeff Zalaznick pays homage to the Italian-American restaurants of the mid-20th century",
+    "button-text": "Book Table",
+    "link": "https://www2.aria.com/en/restaurants/carbone.html"
+  }, {
+    "width": 3,
+    "image": "https://vacationsbymgmresorts.poweredbygps.com/g/pt/vacation-packages/?MDPCID=US.TPS.MGM.BRAND-ARIA.EPACKAGE&icid=DMP_Tile_BB_HO_EV_MGMVacations_09042018_LV_AR",
+    "icon": "usd",
+    "title": "Vacations by MGM Resorts",
+    "description": "Save more when you book your flight and hotel together!",
+    "button-text": "Book Now",
+    "link": "https://vacationsbymgmresorts.poweredbygps.com/g/pt/vacation-packages/?MDPCID=US.TPS.MGM.BRAND-ARIA.EPACKAGE&icid=DMP_Tile_BB_HO_EV_MGMVacations_09042018_LV_AR"
+  }, {
+    "width": 4.5,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/dining/bardot-brasserie/food-and-drink/aria-dining-bardot-salad-egg.tif.image.550.325.high.jpg",
+    "icon": "cutlery",
+    "title": "Bardot Brasserie",
+    "description": "Prepare to be reintroduced to classic French cuisine with a twist only Chef Michael Mina could bring.",
+    "button-text": "Book Table",
+    "link": "https://www2.aria.com/en/restaurants/bardot-brasserie.html"
+  }, {
+    "width": 3,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/dining/the-buffet/food-and-drink/aria-dining-the-buffet-crab-legs.tif.image.300.300.high.jpg",
+    "icon": "cutlery",
+    "title": "The Buffet at Aria",
+    "description": "A truly awe-inspiring dining experience filled with market-fresh produce, gourmet recipes and a warm atmosphere.",
+    "button-text": "Learn More",
+    "link": "https://www2.aria.com/en/restaurants/the-buffet.html"
+  }, {
+    "width": 3,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/corporate/offers/corporate-offers-aaa.tif.image.300.300.high.jpg",
+    "icon": "usd",
+    "title": "AAA Member Discount",
+    "description": "Book with us now and receive 10% off of hotel rates.",
+    "button-text": "Book Offer",
+    "link": "https://www2.aria.com/en/booking/room-booking.html#/default?programId=1d8e141f-1273-4a0a-b301-b62850733702&selectedPropertyId=e2704b04-d515-45b0-8afd-4fa1424ff0a8"
+  }, {
+    "width": 3,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/dining/catch/food-and-drink/aria-dining-catch-food-tablescape.tif.image.300.300.high.jpg",
+    "icon": "cutlery",
+    "title": "Catch",
+    "description": "The only location to bring epic renditions of Asian-influenced sushi, seafood and steak.",
+    "button-text": "Book Table",
+    "link": "https://www2.aria.com/en/restaurants/catch.html"
+  }, {
+    "width": 3,
+    "image": "https://static.mgmresorts.com/content/dam/MGM/aria/pools/architecture/aria-pool-pool.tif.image.300.300.high.jpg",
+    "icon": "bell",
+    "title": "Pools & Cabanas",
+    "description": "Soak up the warm Las Vegas sun from the natural beauty of ARIA’s three distinctive pools.",
+    "button-text": "Learn More",
+    "link": "https://www2.aria.com/en/amenities/pools.html"
+  }]
+}
