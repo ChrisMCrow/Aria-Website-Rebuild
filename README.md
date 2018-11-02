@@ -12,10 +12,13 @@ The goal here is to mimic the design and functionality of the Aria's website: ww
 * The home page should look professional and match the style of the Aria website.
 * The user should be able to query the website for booking a room.
 * The website should be able to be populated with different features / advertisements about the hotel.
+* The website should be desployed on Firebase.
 
 ### Features Added
-* Nav bar
-* Book a Room Form with Special Rates feature
+* Static Nav Bar.
+* Fixed Mini Nav Bar once scroll has begun.
+* Book a Room Form with Special Rates feature.
+* Hotel Features that are autopopulated on the website from the database.
 * Footer with map, social media links & more.
 
 ### Time Logged
@@ -24,6 +27,8 @@ The goal here is to mimic the design and functionality of the Aria's website: ww
 | 10-26-18 | 8am  | 10:30am | 2.5  |
 | 10-28-18 | 10am | 1:30pm  | 3.5  |
 | 10-28-18 | 7pm  | 10:30pm | 3.5  |
+| 11-02-18 | 8am  | 12:00pm | 4    |  
+| 11-02-18 | 1am  | 5:00pm  | 4    |  
 
 
 ## Setup/Installation Requirements
