@@ -14,7 +14,7 @@ export class HomeContentComponent implements OnInit {
   AAARate: boolean = false;
   militaryRate: boolean = false;
 
-  applyRate(militaryRate?: string; AAARate?: string; promoCode?: string, iata?: string): void {
+  applyRate(militaryRate?: string, AAARate?: string, promoCode?: string, iata?: string): void {
     if (promoCode || iata) {
       this.valid = false;
     } else if (AAARate) {
