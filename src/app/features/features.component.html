@@ -1,3 +1,9 @@
-<p>
-  features works!
-</p>
+<h2>Features</h2>
+<div *ngFor="let feature of features | async">
+  <div class="card">
+    <figure>
+      <img src="{{feature.image}}" alt="{{feature.title}}">
+    </figure>
+    <p>{{feature.title}}</p>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-features',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./features.component.css']
 })
 export class FeaturesComponent implements OnInit {
-
+  features: FirebaseListObservable<any[]>;
+  
   constructor() { }
 
   ngOnInit() {
