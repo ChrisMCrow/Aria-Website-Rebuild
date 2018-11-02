@@ -1,18 +1,18 @@
-<nav>
+<nav id="main-nav">
   <!--Logo-->
   <div id="nav-logo">
     <a href=#><img id="logo-element" src="../assets/img/aria_logo.jpg" alt="aria logo" /></a>
   </div>
 
   <!--Left Secondary Nav-->
-  <ul class="nav-secondary" id="nav-secondary--left">
+  <ul class="nav-secondary nav-secondary--left">
     <a href=#><li>Sign In</li></a>
     <a href="https://www.aria.com/en/hotel/aria-sky-suites-home.html" target="_blank"><li>Aria Sky Suites</li></a>
     <a href=#><li>Aria Tower Suites</li></a>
   </ul>
 
   <!--Right Secondary Nav-->
-  <ul class="nav-secondary" id="nav-secondary--right">
+  <ul class="nav-secondary nav-secondary--right">
     <a href=#><li>Guest Services</li></a>
     <a href=#><li>Itinerary</li></a>
     <a href=#><li><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li></a>
@@ -63,5 +63,72 @@
     <a href="https://www2.aria.com/en/meetings-groups.html"><li><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Groups & Weddings</li></a>
     <a href="https://www2.aria.com/en/offers.html"><li><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>Offers</li></a>
     <a href="https://www2.mgmresorts.com/app/"><li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Mobile App</li></a>
+  </ul>
+</nav>
+
+
+<!--Mini Nav-->
+<nav id="mini-nav">
+  <!--Logo-->
+  <div id="nav-logo-mini">
+    <a href=#><img id="logo-element-mini" src="../assets/img/aria_logo.jpg" alt="aria logo"/></a>
+  </div>
+  
+  <!--Left Secondary Nav MINI-->
+  <ul class="nav-secondary nav-secondary--left">
+    <a href=#><li>Sign In</li></a>
+    <a href="https://www.aria.com/en/hotel/aria-sky-suites-home.html" target="_blank"><li>Aria Sky Suites</li></a>
+    <a href=#><li>Aria Tower Suites</li></a>
+  </ul>
+    
+  <!--Right Secondary Nav MINI-->
+  <ul class="nav-secondary nav-secondary--right">
+    <a href=#><li>Guest Services</li></a>
+    <a href=#><li>Itinerary</li></a>
+    <a href=#><li><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li></a>
+  </ul>
+
+  <!--Main Nav MINI-->
+  <ul class="nav-main">
+    <!--Book Room Dropdown-->
+    <div class="dropdown">
+      <li class="nav-highlight dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Book a Room</li>
+      <div class="form-group dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div class="dropdown-item">
+          <label for="checkin">Arrival</label>
+          <input #checkInDate class="form-control" type="date" name="checkin" />
+        </div>
+        <div class="form-group dropdown-item">
+          <label for="checkin">Departure</label>
+          <input #checkOutDate class="form-control" type="date" name="checkin">
+        </div>
+        <div class="form-group dropdown-item">
+          <label for="guests">Guests</label>
+          <select #guestsNumber class="form-control form-control-lg" name="guests">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button (click)="submitForm(checkInDate.value, checkOutDate.value, guestsNumber.value)"><strong>Find Rooms</strong></button>
+        </div>
+        <div class="text-center" id="book-widget-guarantee">
+          <a href=#><img src="../assets/img/best-rates-guarantee-grey.png" alt="Best Rate Guarantee"></a>
+        </div>    
+      </div>
+    </div>
+        
+    <!--External Links-->
+    <a href="https://www2.aria.com/en/hotel.html"><li>Hotel</li></a>
+    <a href="https://www2.aria.com/en/entertainment.html"><li>Entertainment</li></a>
+    <a href="https://www2.aria.com/en/restaurants.html"><li>Restaurants</li></a>
+    <a href="https://www2.aria.com/en/nightlife.html"><li>Nightlife</li></a>
+    <a href="https://www2.aria.com/en/amenities.html"><li>Amenities</li></a>
+    <a href="https://www2.aria.com/en/casino.html"><li>Casino</li></a>
+    <a href="https://www2.aria.com/en/meetings-groups.html"><li>Groups & Weddings</li></a>
+    <a href="https://www2.aria.com/en/offers.html"><li>Offers</li></a>
+    <a href="https://www2.mgmresorts.com/app/"><li>Mobile App</li></a>
   </ul>
 </nav>

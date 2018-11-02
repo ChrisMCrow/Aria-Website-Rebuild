@@ -1,10 +1,27 @@
-nav {
+nav#main-nav {
+  background-color: white;
+  width: 100%;
   position: relative;
+  z-index: 2;
+}
+
+nav#mini-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 #nav-logo {
   width: 100%;
   padding-bottom: 18px;
+  border-bottom: 1px solid lightgray;
+}
+
+#nav-logo-mini {
+  width: 100%;
+  padding-bottom: 10px;
   border-bottom: 1px solid lightgray;
 }
 
@@ -14,11 +31,21 @@ nav {
   height: 78px;
 }
 
+#logo-element-mini {
+  display: block;
+  margin: auto;
+  height: 32px;
+}
+
 .nav-secondary {
   height: 2.4375rem;
   position: absolute;
-  top: 50px;
+  top: 0;
   text-transform: uppercase;
+}
+
+#main-nav .nav-secondary {
+  top: 50px;
 }
 
 .nav-secondary li {
@@ -37,16 +64,17 @@ nav {
   color: white;
 }
 
-#nav-secondary--left {
+.nav-secondary--left {
   left: .25rem;
 }
 
-#nav-secondary--right {
+.nav-secondary--right {
   right: 6.25rem;
 }
 
 .nav-main {
   margin: 0;
+  border-bottom: 1px solid lightgray;
 }
 
 .nav-main li {

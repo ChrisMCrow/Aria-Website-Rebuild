@@ -11,7 +11,6 @@ export class NavBarComponent implements OnInit {
   constructor() { }
 
   submitForm(checkIn: string, checkOut: string, guests: string): void {
-    console.log(guests);
     window.location.replace(`https://www.aria.com/en/booking/room-booking.html#/rooms?numGuests=${guests}&arrive=${checkIn}&depart=${checkOut}`);
   }
 
