@@ -1,4 +1,4 @@
-# Aria Resort & Casino Angular Website Rebuild
+# Aria Resort & Casino Angular Homepage Rebuild
 
 ##### Rebuilding the Aria Resort & Casino in Las Vegas Website using Angular. 10/28/18
 
@@ -40,7 +40,7 @@ To view, simply visit `https://ariawebsiteclone.firebaseapp.com/`
 3. After install has completed, run `ng serve --open` in the terminal.
 
 ## Known Bugs
-* No known bugs at this time.
+* When clicking Special Rates on the Book A Room widget, the AAA discount is applied regardless of which radio button is selected.
 
 ## Technologies Used
 * HTML
