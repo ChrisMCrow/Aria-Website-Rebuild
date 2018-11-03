@@ -33,6 +33,8 @@ The goal here is to mimic the design and functionality of the Aria's website: ww
 
 ## Setup/Installation Requirements
 
+To view, simply visit `https://ariawebsiteclone.firebaseapp.com/`
+
 1. Clone this repository.
 2. Run `npm install` in the terminal while in the repository's top directory.
 3. After install has completed, run `ng serve --open` in the terminal.
